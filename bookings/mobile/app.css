@@ -1,0 +1,38 @@
+
+@import url(/-/webix/webix.min.css);
+@import url(/-/webix/scheduler/scheduler.css);
+
+/* 
+.webix_dayevents_scale_top {border-bottom: 1px solid #ebebeb;}
+.webix_dayevents_scale_item {border-bottom: 1px solid #cccccc;}
+*/
+.webix_dayevents_event_item {
+	line-height: 12px;
+	border-top: 1px solid #fff !important
+}
+.bg-buffer{
+	background-color: #fdd835 !important;
+	border-left: 3px solid #fdd835 !important;
+	color: #333 !important;
+}
+.bg-boeing{
+	background-color: #5b9be0 !important;
+	border-left: 3px solid #5b9be0 !important;
+	color: #fff !important;
+}
+.bg-airbus{
+	background-color: #74da68 !important;
+	border-left: 3px solid #74da68 !important;
+	color: #fff !important;
+}
+.bg-school{
+	background-color: #FF5733 !important;
+	border-left: 3px solid #FF5733 !important;
+	color: #fff !important;
+}
+.without-pilots{
+	outline: 2px dashed red !important;
+	outline-offset: -4px;
+	color: red !important;
+	font-weight: bold !important;
+}

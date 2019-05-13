@@ -1,0 +1,58 @@
+@startuml
+scale 1200 width
+
+state "**События**" as actions {
+  state "**1 - Отлетал**" as OK : complete
+  --
+  state "**2 - Отмена**" as X : cancel
+  --
+  state "**3 - Перенос**" as RB : move
+  --
+  state "**4 - Архивация**" as ARCH : archive
+  --
+  state "**5 - Возврат денег**" as RF : refund
+}
+
+state "**БРОНЬ** устанавливается в один из статусов:" as booking {
+  state "**CERT**" as cert : Оплаченный сертификат
+  state "**RESERVE**" as reserve : Без сертификата
+  state "**PENDING**" as pending : Сертификат ожидает оплаты
+}
+state " " as fly {
+	state "**NEW [1:2:3:5]**" as new : **Ожидает полёт**
+	state "**REBOOKING [1:2:3:5]**" as rebooking : Перенос бронирования\n**Ожидает полёт**
+}
+
+state "**COMPLETE []**" as complete : Полёт состоялся.\n**Бронь не действительна**
+state "**REFUND [2]**" as refund : Возврат денег.\n**Бронь не действительна**
+state "**FAIL [3:4:5]**" as fail : Полет не состоялся \nпо вине клиента
+state "**TECHNICAL [3:4:5]**" as technical : Отказ оборуд.\nЗапишется позже
+state "**MAJEURE [3:4:5]**" as majeure : Отмена полета\nУважтельная причина\nЗапишется позже
+state "**ARCHIVE []**" as archive : **Бронь заархивирована**
+
+
+[*] --> new : create
+fly -down--> complete : complete
+fly -down--> refund : refund
+fly -down--> technical : cancel
+fly -down--> fail : cancel
+fly -down--> majeure : cancel
+new -right-> rebooking : move
+rebooking -> rebooking : move
+fail -> refund : refund
+technical -left-> refund : refund
+majeure -left--> refund : refund
+technical --> rebooking : move
+majeure --> rebooking : move
+fail --> rebooking : move
+
+complete -> archive : archive
+refund --> archive : archive
+majeure --> archive : archive
+technical --> archive : archive
+fail --> archive : archive
+
+archive -down-> [*]
+
+
+@enduml

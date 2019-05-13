@@ -1,0 +1,266 @@
+@import url(/-/webix/kanri/app.css);
+.dhx_cal_event{overflow:hidden;}
+.dhx_body{font-size: 10px !important;}
+.dhx_cal_event .dhx_title{
+	font-weight:600 !important;
+	font-size:10px !important;
+	padding: 2px 0 0 3px !important;
+}
+.boing-event .dhx_body,
+.boing-event .dhx_title {
+	border: 1px solid #cccccc !important;
+}
+.dhx_drag_marker{background: #db4865 !important}
+.boing-complete-event .dhx_title,
+.boing-complete-event .dhx_body {background-color: #5069a2 !important;}
+.airbus-complete-event .dhx_title,
+.airbus-complete-event .dhx_body {background-color: #48764c !important;}
+.maintenance-event .dhx_body,
+.maintenance-event .dhx_title {
+	border: 1px solid #cccccc !important;
+	background-color: #fdd835 !important;
+}
+.airbus-label,
+.dhx_scale_bar[aria-label=A320] {
+	color: #0cb42e;
+	font-weight: bold;
+}
+.boing-label,.airbus-label{border:none !important;}
+.boing-label,
+.dhx_scale_bar[aria-label=B737] {
+	color: #5B9BE0;
+	font-weight: bold;
+}
+.buffer-event .dhx_body,
+.buffer-event .dhx_title {
+	border: 1px solid #cccccc !important;
+	background-color: #fdd835 !important;
+}
+.airbus-event .dhx_body,
+.airbus-event .dhx_title {
+	border: 1px solid #cccccc !important;
+	background-color: #74da68 !important;
+}
+.boing-event .dhx_body,
+.boing-event .dhx_title {
+	border: 1px solid #cccccc !important;
+	background-color: #9FC6E7 !important;
+}
+.boing-event.event-opacity-50 .dhx_title,
+.boing-event.event-opacity-50 .dhx_body {background-color: #ffa726!important;}
+.airbus-event.event-opacity-50 .dhx_title,
+.airbus-event.event-opacity-50 .dhx_body {background-color: #ffa726!important;}
+.airbus-event.technical_rebooking .dhx_body,
+.airbus-event.technical_rebooking .dhx_title {
+	background-color: #4fc3f7 !important;
+}
+.airbus-event.vip_event .dhx_body,
+.airbus-event.vip_event .dhx_title {
+	background-color: #4fc3f7 !important;
+}
+.boing-event.technical_rebooking .dhx_body,
+.boing-event.technical_rebooking .dhx_title {
+	background-color: #4fc3f7 !important;
+}
+.boing-event.vip_event .dhx_body,
+.boing-event.vip_event .dhx_title {
+	background-color: #4fc3f7 !important;
+}
+.fail-event .dhx_title, 
+.fail-event .dhx_body,
+.majeure-event .dhx_title,
+.majeure-event .dhx_body,
+.technical-event .dhx_title,
+.technical-event .dhx_body,
+.refund-event .dhx_title,
+.refund-event .dhx_body {
+	background-color: #d84315 !important;
+}
+.airbus-background .webix_el_label{color: #0cb42e !important;}
+.boeing-background .webix_el_label{color: #01579B !important;}
+.airbus-color{font-weight: bold; color: #0cb42e;}
+.boing-color{font-weight: bold; color: #5B9BE0;}
+.airbus-boing-color{font-weight: bold; color: #333333;}
+.static-color{font-weight: bold; color: #CCC;}
+.status-color-green .webix_icon,
+.status-color-green div,
+.status-color-green input {font-weight: bold; color: #0cb42e;}
+.status-color-yellow .webix_icon,
+.status-color-yellow div {font-weight: bold; color: #ffa21a;}
+.status-color-green input {font-weight: bold; color: #5B9BE0;}
+.status-color-red .webix_icon,
+.status-color-red div,
+.status-color-green input {font-weight: bold; color: #e11812;}
+.color-blue .webix_icon {color:#5B9BE0 !important;}
+.color-red{color: #e11812!important;}
+.color-brown{color:#824141!important;}
+.color-yellow{color:#ffa21a!important;}
+.color-green{color: #0cb42e!important;}
+.color-blue{color: #01579B!important;}
+.color-dark-blue{color:#070CE1!important;}
+.color-black{color:#000 !important;}
+.color-gold{color:#ff8000 !important;}
+.status-color-red input {border: 1px solid #e11812 !important;}
+.status-color-yellow input {border: 1px solid #ffa21a !important;}
+.status-color-green input {border: 1px solid #0cb42e !important;}
+textarea[name=db_comments] {border: none;background: #F4F4F4 !important;}
+.no-border textarea{border: none !important;}
+
+.webix_multiview, .webix_fieldset {background: #F4F4F4 !important;}
+.no-width-padding {width:0 !important; padding:0 !important;}
+.no-label label{
+	width:0 !important;
+	padding-right: 0 !important;
+}
+.webix_control input,
+.webix_control textarea {color:#000 !important;}
+.dhx_event_move.dhx_title{border-bottom: none !important;text-align: left !important;}
+.dhx_cal_event .dhx_body{border-top: none !important; padding: 2px 3px 8px 3px !important;}
+.hide-time-done-button .webix_cal_done{display: none !important;}
+.color-plane-radio-button .webix_radio_option:nth-child(odd) label {color: #0cb42e !important;}
+.color-plane-radio-button .webix_radio_option:nth-child(even) label {color: #01579B !important;}
+.color-red, .color-gray {border: none !important;}
+.none-border {border: none !important;}
+.none-border textarea{border: none !important;}
+.color-red, .color-red .webix_icon {color: #e11812 !important;}
+.color-gray .webix_icon {color: #b3b3b3 !important;}
+.color-dark .webix_icon {color: #333333 !important;}
+.color-green .webix_icon {color: #0cb42e !important;}
+.color-black .webix_icon {color: #000000 !important;}
+.staff-icon-place{cursor:pointer; display:inline-block;position:relative;float:left;border:none !important; top: 0px; left: 10px;}
+.notice-icon-place{cursor:pointer; display:inline-block;position:relative;float:left;border:none !important; top: 0px; left: -8px;}
+.top-day-date-place{text-align:center; display:inline-block;position:relative;float:left;font-weight:600;font-size:15px;border:none !important;}
+.bolder, .bolder div{font-weight: 600;}
+.top-icon-size .webix_icon{font-size: 16px !important;}
+.staff-users-icon-place button {vertical-align: inherit !important;}
+.staff-notice-icon-place button {vertical-align: inherit !important;}
+.dhx_scale_bar.dhx_second_scale_bar{display:inline-flex;justify-content:space-between;}
+.none-border button{border:none !important;background:none !important;}
+.multicombo-option-list .webix_multicombo_delete{display:none;}
+.multicombo-option-list .webix_multicombo_value{border: 1px solid #cccccc;color:#333;}
+.hide-border input, .hide-border textarea, .hide-border .webix_inp_static {border:none !important;}
+.hide-background input, .hide-background textarea, .hide-border .webix_inp_static {background: none !important;}
+.staff-icon-place .webix_control{border:none !important;}
+.staff-icon-place button {height: auto !important;}
+.font-sz-15 {font-size:15px !important;}
+.font-sz-18 {font-size:18px !important;}
+.w-15{width:15px!important;}
+.booking-search{font-size: 20px; color:#268fd5; position: relative; top:5px; cursor: pointer;}
+.link-color-blue div {color:#3498db; cursor: pointer;}
+.dhx_search_button {
+	background: 0 0;
+	color: #5780AD;
+	font-size: 13px;
+	font-weight: bolder;
+	left: auto;
+	right: 30px;
+	text-decoration: none;
+	width: 50px;
+}
+.dhx_scale_holder:nth-child(even),
+.dhx_scale_holder_now:nth-child(even),
+.dhx_scale_holder:nth-child(even) .dhx_scale_holder_holiday
+{
+	border-right: 1px solid #8c8c8c;
+}
+.dhx_scale_bar.dhx_second_scale_bar {
+	border-bottom: 1px solid #CCC !important;
+}
+.dhx_second_scale_bar:nth-child(1n+6) {
+	border-left: 1px solid #8c8c8c !important;
+	border-bottom: 1px solid #CCC !important;
+}
+.dhx_scale_bar:nth-child(3n+4){
+	border-left: 1px solid #8c8c8c !important;
+}
+
+.dhx_cal_today_button {
+	background: 0 0;
+	color: #5780AD;
+	font-size: 13px;
+	font-weight: bolder;
+	left: auto !important;
+	right: auto !important;
+	text-decoration: none;
+	width: 80px;
+	margin-left: 25px;
+}
+.dhx_cal_prev_button {
+	right: auto !important;
+	margin-left: 100px;
+}
+.dhx_cal_next_button {
+	right: auto !important;
+	margin-left: 150px;
+}
+
+/**
+Разделение дней на колонки пробелом
+ */
+.dhx_scale_holder:nth-child(even) .dhx_title {
+	width: auto !important;
+}
+.dhx_scale_holder:nth-child(even) .dhx_body {
+	width: auto !important;
+}
+.dhx_scale_holder:nth-child(even) .dhx_cal_event {
+	width: 97% !important;
+	left: 0 !important;
+}
+.dhx_scale_holder:nth-child(odd) .dhx_title {
+	width: auto !important;
+}
+.dhx_scale_holder:nth-child(odd) .dhx_body {
+	width: auto !important;
+}
+.dhx_scale_holder:nth-child(odd) .dhx_cal_event {
+	width: 97% !important;
+	left: 3% !important;
+}
+.alert-label{
+	background: #e11812;
+	color: #ffffff;
+	font-size: large;
+	padding-left:5px;
+	padding-right:5px;
+	margin-bottom: 5px !important;
+}
+
+/* sustom.css */
+
+.dhx_cal_event .dhx_footer, .dhx_cal_event .dhx_select_menu_footer {
+	height: 6px;
+	margin: 0 0 0 1px;
+	border-width: 0;
+	position: relative;
+	top: 0;
+	background: none !important;
+}
+.buffer-event .dhx_title,
+.buffer-event .dhx_body
+{color:#333 !important;}
+.maintenance-event .dhx_title,
+.maintenance-event .dhx_body
+{color:#333 !important;}
+.boing-event .dhx_header,
+.boing-event .dhx_title,
+.boing-event .dhx_body
+{color:#333 !important;}
+.airbus-event .dhx_header,
+.airbus-event .dhx_title,
+.airbus-event .dhx_body
+{color:#333 !important;}
+.current-day{color:#0cb42e !important;}
+.holiday{color:#e11812;}
+.online-booking{
+	outline: 1px dashed #800080 !important;
+	outline-offset: -1px !important;
+}
+.surcharge{
+	outline: 2px dashed red !important;
+	outline-offset: -2px !important;
+}
+.school-pilot{
+	outline: 2px dashed green !important;
+	outline-offset: -2px !important;
+}

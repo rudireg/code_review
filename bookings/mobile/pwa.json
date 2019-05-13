@@ -1,0 +1,16 @@
+{
+	"short_name": "Calendar",
+	"name": "TFT Pilots Calendar",
+	"icons": [
+		{
+			"src": "icon-192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		}
+	],
+	"display": "standalone",
+	"scope": "/erp/bookings/mobile/",
+	"start_url": "/erp/bookings/mobile/index.html",
+	"background_color": "#fafafa",
+	"theme_color": "#002366"
+}
